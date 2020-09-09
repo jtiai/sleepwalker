@@ -5,11 +5,15 @@ verify_ssl = true
 
 [dev-packages]
 pmw = "*"
+black = "*"
 
 [packages]
 panda3d = "==1.10.6"
 blender = "*"
-ursina = {editable = true, git = "git@github.com:pokepetter/ursina.git"}
+ursina = {editable = true, path = "./ursina"}
 
 [requires]
 python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
